@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap');
+/* --- NAV BAR --- */
+.partners-nav {
+  display: flex;
+  align-items: center;
+  padding: 15px 50px;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.vancity-logo {
+  max-height: 45px;
+  width: auto;
+}
+
+.event-sponsors {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 50px;
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+.IGDS-logo, .liverpool-logo {
+  max-height: 250%;
+  width: auto;
+  max-width: 120px;
+}
+
+.x-divider {
+  color: #999999;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.wedding-wrapper {
+  font-family: 'Montserrat', sans-serif;
+  color: #1a1a1a;
+  background-color: #fcfcfc;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .title, .date, .section-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Top Navigation */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Hero Section */
+.section-hero {
+  padding: 40px 20px 80px;
+}
+
+.title {
+  font-size: 2.8rem;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+}
+
+.date {
+  font-size: 3.5rem;
+  letter-spacing: 6px;
+  margin-bottom: 30px;
+}
+
+/* Image Placeholders */
+.hero-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.img-placeholder {
+  background-color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+.img-side {
+  width: 420px;
+  height: 500px;
+}
+
+.img-center {
+  width: 500px;
+  height: 550px;
+}
+
+.subtitle {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Dark Section (Schedule) */
+.section-dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 100px 20px;
+}
+
+.section-dark .overline {
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.section-dark .section-title {
+  font-size: 2.2rem;
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+}
+
+.schedule-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.schedule-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schedule-item .time {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  font-family: 'Playfair Display', serif;
+}
+
+.schedule-item .event {
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Location Section */
+.section-location {
+  padding: 100px 20px;
+  background-color: #fcfcfc;
+}
+
+.section-location .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+}
+
+.location-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.img-location {
+  width: 640px;
+  height: 420px;
+  justify-content: center;
+
+}
+
+.loc-text {
+  font-size: 0.65rem;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  max-width: 150px;
+}
+
+/* Booking Section */
+.section-booking {
+  padding: 100px 20px;
+  background-color: #ffffff;
+}
+
+.section-booking .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+}
+
+.booking-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.booking-card {
+  border: 1px solid #e0e0e0;
+  padding: 50px 40px;
+  max-width: 420px;
+  width: 100%;
+  text-align: left;
+  background-color: #fafafa;
+}
+
+.booking-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.booking-card p {
+  font-size: 0.8rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.btn-dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: 1px solid #1a1a1a;
+  padding: 18px 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btn-dark:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.payment-note {
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+}
