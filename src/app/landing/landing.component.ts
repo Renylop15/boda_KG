@@ -11,10 +11,11 @@ export class LandingComponent {
   constructor(private router: Router) {}
 
   goToWeddingBooking() {
-    this.router.navigate(['/reserva-boda']);
+    window.location.href = 'https://lab.vancity.mx/reserva-boda';
   }
 
   goToAirportBooking() {
-    this.router.navigate(['/reserva-aeropuerto']);
+    // Esto redireccionará a la página de Vancity en la misma pestaña
+    window.location.href = 'https://lab.vancity.mx/reserva';
   }
 }
