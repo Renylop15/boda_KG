@@ -19,26 +19,32 @@
   </nav>
 <!-- Booking Section (Reservaciones) -->
   <section class="section-booking">
-    <h2 class="section-title">TRANSPORTATION BOOKING</h2>
-    <div class="booking-grid">
-      
-      <!-- Card Boda -->
-      <div class="booking-card">
-        <h3>WEDDING SHUTTLE</h3>
-        <p><strong>Departures CDMX - Cuernavaca:</strong><br>Friday, Sept 18th, 1:00 PM<br>Saturday, Sept 19th, 9:00 AM</p>
-        <p><strong>Return Cuernavaca - CDMX:</strong><br>Sunday, Sept 20th, 12:30 PM</p>
-        <button class="btn-dark" (click)="goToWeddingBooking()">BOOK SHUTTLE</button>
-      </div>
+    <!-- Capa protectora para que el texto se lea bien -->
+    <div class="parallax-overlay"></div>
+    
+    <!-- Contenedor del contenido (queda por encima de la imagen) -->
+    <div class="booking-content">
+      <h2 class="section-title">TRANSPORTATION BOOKING</h2>
+      <div class="booking-grid">
+        
+        <!-- Card Boda -->
+        <div class="booking-card">
+          <h3>WEDDING SHUTTLE</h3>
+          <p><strong>Departures CDMX - Cuernavaca:</strong><br>Friday, Sept 18th, 1:00 PM<br>Saturday, Sept 19th, 9:00 AM</p>
+          <p><strong>Return Cuernavaca - CDMX:</strong><br>Sunday, Sept 20th, 12:30 PM</p>
+          <button class="btn-dark" (click)="goToWeddingBooking()">BOOK SHUTTLE</button>
+        </div>
 
-      <!-- Card Aeropuerto -->
-      <div class="booking-card">
-        <h3>AIRPORT TRANSFER</h3>
-        <p><strong>Airport - Hotel - Airport</strong><br>Personalized transfer service based on your flight itinerary.</p>
-        <button class="btn-dark" (click)="goToAirportBooking()">BOOK AIRPORT TRANSFER</button>
-      </div>
+        <!-- Card Aeropuerto -->
+        <div class="booking-card">
+          <h3>AIRPORT TRANSFER</h3>
+          <p><strong>Airport - Hotel - Airport</strong><br>Personalized transfer service based on your flight itinerary.</p>
+          <button class="btn-dark" (click)="goToAirportBooking()">BOOK AIRPORT TRANSFER</button>
+        </div>
 
+      </div>
+      <p class="payment-note">SECURE CARD PAYMENTS VIA OPENPAY BBVA</p>
     </div>
-    <p class="payment-note">SECURE CARD PAYMENTS VIA OPENPAY BBVA</p>
   </section>
 
   <!-- Hero Section -->
