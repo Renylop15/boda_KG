@@ -30,8 +30,8 @@
         <!-- Card Boda -->
         <div class="booking-card">
           <h3>WEDDING SHUTTLE</h3>
-          <p><strong>Departures CDMX - Cuernavaca:</strong><br>Friday, Sept 18th, 1:00 PM<br>Saturday, Sept 19th, 9:00 AM</p>
-          <p><strong>Return Cuernavaca - CDMX:</strong><br>Sunday, Sept 20th, 12:30 PM</p>
+          <p><strong>Departures. Hotel Intercontinental Presidente Mexico City Polanco - Hacienda Vista Hermosa Cuernavaca:</strong><br>Friday, Sept 18th, 1:00 PM<br>Saturday, Sept 19th, 9:00 AM</p>
+          <p><strong>Return. Hacienda Vista Hermosa Cuernavaca - Hotel Intercontinental Presidente Mexico City Polanco:</strong><br>Sunday, Sept 20th, 12:30 PM</p>
           <button class="btn-dark" (click)="goToWeddingBooking()">BOOK SHUTTLE</button>
         </div>
 
@@ -62,26 +62,28 @@
     <p class="subtitle">JOIN US AS WE EMBARK ON A JOURNEY OF LOVE AND HAPPINESS.</p>
   </header>
 
-  <!-- Schedule Section (Oscura) -->
+  <!-- Countdown Section (Oscura) -->
   <section class="section-dark section-schedule">
-    <p class="overline">HERE'S A SNEAK PEEK OF</p>
-    <h2 class="section-title">OUR SPECIAL DAY'S SCHEDULE</h2>
-    <div class="schedule-grid">
-      <div class="schedule-item">
-        <span class="time">4:00 PM</span>
-        <span class="event">CEREMONY</span>
+    <p class="overline">COUNTDOWN TO</p>
+    <h2 class="section-title">OUR SPECIAL DAY</h2>
+    
+    <div class="countdown-grid">
+      <div class="countdown-item">
+        <!-- Usamos el pipe 'number' para asegurar que siempre haya 2 dígitos (ej. 09) -->
+        <span class="number">{{ days | number:'2.0-0' }}</span>
+        <span class="label">DAYS</span>
       </div>
-      <div class="schedule-item">
-        <span class="time">5:00 PM</span>
-        <span class="event">COCKTAIL</span>
+      <div class="countdown-item">
+        <span class="number">{{ hours | number:'2.0-0' }}</span>
+        <span class="label">HOURS</span>
       </div>
-      <div class="schedule-item">
-        <span class="time">6:30 PM</span>
-        <span class="event">DINNER</span>
+      <div class="countdown-item">
+        <span class="number">{{ minutes | number:'2.0-0' }}</span>
+        <span class="label">MINS</span>
       </div>
-      <div class="schedule-item">
-        <span class="time">10:00 PM</span>
-        <span class="event">DANCING & PARTY</span>
+      <div class="countdown-item">
+        <span class="number">{{ seconds | number:'2.0-0' }}</span>
+        <span class="label">SECS</span>
       </div>
     </div>
   </section>

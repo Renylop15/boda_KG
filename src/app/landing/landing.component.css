@@ -143,17 +143,45 @@ h1, h2, h3, .title, .date, .section-title {
   letter-spacing: 2px;
 }
 
-.schedule-grid {
+/* =========================================
+   --- COUNTDOWN SECTION --- 
+   ========================================= */
+.countdown-grid {
   display: flex;
   justify-content: center;
   gap: 60px;
   flex-wrap: wrap;
 }
 
-.schedule-item {
+.countdown-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 90px;
+}
+
+.countdown-item .number {
+  font-size: 3.5rem; /* Números grandes y elegantes */
+  margin-bottom: 12px;
+  font-family: 'Playfair Display', serif;
+  font-variant-numeric: tabular-nums; /* Evita que los números "brinquen" al cambiar de ancho */
+}
+
+.countdown-item .label {
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #a3a3a3; /* Un gris sutil para que resalte el número */
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  .countdown-grid {
+    gap: 30px;
+  }
+  .countdown-item .number {
+    font-size: 2.5rem;
+  }
 }
 
 .schedule-item .time {
